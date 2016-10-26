@@ -1,0 +1,135 @@
+
+
+.toolImg {
+  width: 100%;
+}
+
+.toolBody {
+  height: 100%;
+  overflow: scroll;
+  background-color: #fff;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, .15);
+}
+
+/* tools */
+.toolNav {
+  position: fixed;
+  top: 0px;
+  bottom: 50px;
+  height: 100%;
+  left: -400px;
+  z-index: 1100;
+  width: 400px;
+
+  .toolNavBar {
+    background: rgba(0,0,0,.65);
+    box-shadow: 0 -5px 8px rgba(0, 0, 0, .15);
+  }
+
+  .search {
+    border-radius: 0px;
+    height: 50px;
+  }
+
+  .toolWarp {
+    padding: 5px;
+    background: #eeeeee;
+    border-radius: 4px;
+    height: 100%;
+  }
+
+}
+
+
+
+/*  btn primary */
+
+.antBtnPrimary {
+  color: #fff;
+  background-color: #6c5de7;
+  border-color: #6c5de7;
+}
+
+.toolNavIcon i.up {
+  -webkit-transform: rotate(185deg) scale(.6);
+  transform: rotate(185deg) scale(.6);
+}
+.toolNavIcon i {
+  -webkit-transition: -webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+  transition: -webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+  transition: transform .3s cubic-bezier(.645,.045,.355,1);
+  transition: transform .3s cubic-bezier(.645,.045,.355,1),-webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+  -webkit-transform-origin: 50% 5px;
+  transform-origin: 50% 5px;
+  -webkit-transform: scale(.6);
+  transform: scale(.6);
+}
+.anticon {
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.toolNavIcon {
+  width: 15px;
+  //height: 100px;
+  background: #6c5de7;
+  color: #fff;
+  border-radius: 6px 0px 0px 6px;
+  text-align: center;
+  font-size: 12px;
+  position: fixed;
+  right: 0px;
+  bottom: 50%;
+  margin-left: -50px;
+  z-index: 920;
+  box-shadow: 0 0 5px rgba(0,0,0,.35);
+  cursor: pointer;
+  padding: 40px 0px;
+}
+
+.anticonCaretDown:before {
+  content: "\E611";
+  -webkit-transform: rotate(265deg) scale(.9);
+    transform: rotate(265deg) scale(.9);
+}
+
+.anticon:before {
+  display: block;
+  font-family: anticon!important;
+}
+
+
+.custom {
+  display: block;
+  margin: 10px;
+
+  .tool {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .btn {
+
+  }
+
+  .btnRemove {
+    margin: 5px;
+    position: relative;
+    background-color: #ff613e;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ff3643;
+    }
+  }
+}
+
+

@@ -1,0 +1,327 @@
+
+.hide {
+  display: none;
+}
+
+.layoutEdit {
+  position: relative;
+
+  .tool {
+    display: none;
+    position: absolute;
+    z-index: 800;
+    top: 0px;
+    width:100%;
+
+    &:hover {
+      display: block;
+    }
+
+    ul {
+      float: right;
+
+      li {
+        float: left;
+      }
+
+      li:before {
+        content: '';
+        display: inline-block;
+        width: 2px;
+      }
+    }
+
+    .leftTool {
+      float: right;
+    }
+
+    .editAlt {
+      color: #FFF;
+      background-color: #6c5de7;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .deleteAlt {
+      z-index: 999;
+      color: #FFF;
+      background-color: #ff4855;
+      padding: 5px 8px;
+      cursor: pointer;
+
+
+      i {
+        margin-top: 5px;
+      }
+    }
+
+    .moveUp, .moveDown {
+      background-color: #6c5de7;
+      color: #FFF;
+      padding: 5px 8px;
+      cursor: pointer;
+
+      i {
+        margin-top: 5px;
+      }
+
+      &:hover {
+        background-color: #FFF;
+        color: #6c5de7;
+      }
+    }
+  }
+
+  .toolEdit {
+    display: block;
+  }
+}
+
+.edit {
+  //:hover {
+  //  border: 1px dashed #6c5de7;
+  //}
+}
+
+
+
+.editItem {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  min-height: 50px;
+  z-index: 10;
+}
+
+
+.toolPanel {
+  position: absolute;
+  width: 1000px;
+  top: -25px;
+  left: 0px;
+  outline: none;
+  border: none;
+  z-index: 800;
+}
+
+.placeholder {
+  display: inline-block;
+  width: 10px;
+  content: "";
+}
+
+.fontContext, .imageContext {
+  //width: 100%;
+  //height: 100%;
+  display: inline-block;
+  width: auto;
+  //max-width: 100%;
+  //height: 100%!important;
+  //max-height: 100%!important;
+}
+
+.editBorder {
+  position: absolute;
+  display: inline-block;
+  padding: 10px;
+  transform:rotate(0deg);
+  border: 1px solid transparent;
+  z-index: 800;
+  width: 100%;
+  height: auto;
+  word-wrap:break-word;
+  word-break:break-all;
+
+  &:focus {
+    border:none;
+    outline: none;
+  }
+
+  &.changeSolid {
+    border: 1px solid #39d0e7!important;
+  }
+
+  &.transparentSolid {
+    border: 1px solid transparent!important;
+  }
+
+  &:hover {
+    border: 1px dashed #39d0e7;
+  }
+
+  .incompatibleLayout {
+    display: inline-block;
+    position: relative;
+  }
+
+  .editAltMove {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .changeHide {
+    display: none!important;
+  }
+
+  .editBorderTop, .editBorderTopRight, .editBorderRight, .editBorderRightBottom, .editBorderBottom, .editBorderBottomLeft, .editBorderLeft, .editBorderLeftTop {
+    position: absolute;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    z-index: 600;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #39d0e7;
+  }
+
+  .editBorderTop{
+    top: -7px;
+    left: 50%;
+    margin-left: -6px;
+    cursor: n-resize;
+  }
+
+  .editBorderTopRight {
+    top: -6px;
+    right: -6px;
+    cursor: ne-resize;
+  }
+
+  .editBorderRight {
+    top: 50%;
+    margin-top: -7px;
+    right: -7px;
+    cursor: e-resize;
+  }
+
+  .editBorderRightBottom {
+    bottom: -6px;
+    right: -6px;
+    cursor: se-resize;
+  }
+
+  .editBorderBottom {
+    left: 50%;
+    bottom: -7px;
+    margin-left: -7px;
+    cursor: s-resize;
+  }
+
+  .editBorderBottomLeft {
+    left: -6px;
+    bottom: -6px;
+    cursor: sw-resize;
+  }
+
+  .editBorderLeft {
+    top: 50%;
+    margin-top: -6px;
+    left: -6px;
+    cursor: w-resize;
+  }
+
+  .editBorderLeftTop {
+    top: -6px;
+    left: -6px;
+    cursor: nw-resize;
+  }
+}
+
+
+.layoutInEditFont {
+  display: inline-block;
+
+  .editBtnIcon {
+    position: relative;
+    top: 2px;
+  }
+
+  .defaultColor {
+    color: #fff;
+  }
+
+  .activeColor {
+    color: #fff;
+  }
+}
+
+.elementLink {
+  display: inline-block;
+
+  .showBtn {
+    color: #fff;
+  }
+}
+
+.layoutInAlign {
+
+  .editBtnIcon {
+    position: relative;
+    top: 2px;
+  }
+
+  .defaultColor {
+    color: #fff;
+  }
+
+  .activeColor {
+    color: #fff;
+  }
+}
+
+
+.colorSelect {
+  display: inline-block;
+
+
+  .editColor {
+    display: inline-block;
+  }
+
+  .colorPanel {
+    display: inline-block;
+    width: 22px;
+    height: 16px;
+    margin: 2px;
+  }
+}
+
+
+
+
+.editAnimation {
+  display: inline-block;
+
+  .attribute {
+    display: inline-block;
+
+
+    label {
+      color: #FFF;
+    }
+  }
+
+  .attr {
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    width: 80px;
+  }
+}
+
+.editMax {
+
+  .btn {
+    color: #fff;
+  }
+}
+
+.editMore {
+  display: inline-block;
+}
+
+

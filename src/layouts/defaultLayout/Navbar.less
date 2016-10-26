@@ -1,0 +1,144 @@
+.navigation {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  height: 64px!important;
+  width: 100%;
+  top: 0px;
+}
+
+.space {
+  display: block;
+  height: 64px;
+}
+
+.navPanel {
+  display: none;
+  position: fixed;
+  z-index: 600;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+.show {
+  display: block;
+}
+
+
+.navbar {
+  position: relative;
+  top: 0px;
+  display: block;
+  height: 64px;
+  z-index: 610;
+  background-color: #404040;
+  padding: 0px 4%;
+  width: 100%;
+
+  .logo {
+    height: 64px;
+    line-height: 64px;
+    position: relative;
+    top: 2px;
+    text-align: center;
+
+    &>* {
+      display: inline-block;
+    }
+
+    & a {
+      display: inline-block;
+      line-height: 64px;
+    }
+
+    .phoneIcon {
+      position: absolute;
+      left: 10px;
+      padding-top: 35px;
+      padding-left: 10px;
+      z-index: 10;
+      width: 50px;
+      height: 100%;
+      cursor: pointer;
+      margin-top: -13px;
+      line-height: 64px;
+    }
+  }
+
+  .menu {
+    height: 64px;
+    line-height: 63px;
+  }
+
+  .menuRight {
+    float: right;
+  }
+
+  .nav {
+    display: block;
+  }
+
+
+  .navShow {
+    -webkit-transform: translateX(0)!important;
+    transform: translateX(0)!important;
+    opacity: 1!important;
+  }
+
+  @media only screen and (max-width: 767px) and (min-width: 320px) {
+    .phoneIcon:before {
+      content: "";
+      border-radius: 2px;
+      height: 2px;
+      background: #f2f2f2;
+      box-shadow: 0 6px 0 0 #f2f2f2,0 12px 0 0 #f2f2f2;
+      display: block;
+      width: 16px;
+    }
+
+    .menu {
+      border-color: #fff;
+      height: 100%;
+
+      li {
+        border-bottom: none!important;
+      }
+    }
+
+    .menuRight {
+      float: none;
+    }
+
+    .nav {
+      text-align: center;
+      position: fixed;
+      z-index: 1000;
+      top: 0px;
+      left: 0px;
+      background: #fff;
+      line-height: 60px;
+      margin-right: 0;
+      width: 50%;
+      height: 100%;
+      box-shadow: 10px 0 12px rgba(0,0,0,.1);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      overflow-x: hidden;
+      overflow-y: auto;
+      opacity: 0;
+      -webkit-transition: opacity .3s,-webkit-transform .3s;
+      transition: opacity .3s,-webkit-transform .3s;
+      transition: transform .3s,opacity .3s;
+      transition: transform .3s,opacity .3s,-webkit-transform .3s;
+
+      a {
+        font-size: 1.2em;
+      }
+    }
+
+
+  }
+}
+
+

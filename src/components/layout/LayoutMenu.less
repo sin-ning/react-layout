@@ -1,0 +1,104 @@
+
+.toolNav * {
+  pointer-events: auto;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+i, cite, em, var, address, dfn {
+  font-style: italic;
+}
+
+.toolNav {
+  width: 400px;
+  position: fixed;
+  bottom: -64px;
+  z-index: 1100;
+  pointer-events: none;
+}
+
+
+.toolNavBar {
+  height: 64px;
+  background: rgba(0,0,0,.65);
+  box-shadow: 0 -5px 8px rgba(0,0,0,.15);
+
+  ul {
+    position: relative;
+    text-align: center;
+
+    li {
+      position: relative;
+      padding: 0 10px;
+      line-height: 64px;
+      display: inline-block;
+    }
+  }
+
+}
+
+
+/*  btn primary */
+
+.antBtnPrimary {
+  color: #fff;
+  background-color: #6c5de7;
+  border-color: #6c5de7;
+}
+
+
+.toolNavIcon i.up {
+  -webkit-transform: rotate(180deg) scale(.6);
+  transform: rotate(180deg) scale(.6);
+}
+.toolNavIcon i {
+  -webkit-transition: -webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+  transition: -webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+  transition: transform .3s cubic-bezier(.645,.045,.355,1);
+  transition: transform .3s cubic-bezier(.645,.045,.355,1),-webkit-transform .3s cubic-bezier(.645,.045,.355,1);
+  -webkit-transform-origin: 50% 5px;
+  transform-origin: 50% 5px;
+  -webkit-transform: scale(.6);
+  transform: scale(.6);
+}
+.anticon {
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  text-align: center;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.toolNavIcon {
+  width: 100px;
+  height: 15px;
+  background: #6c5de7;
+  color: #fff;
+  border-radius: 6px 6px 0 0;
+  text-align: center;
+  font-size: 12px;
+  position: fixed;
+  left: 50%;
+  top: 0px;
+  //bottom: 0px;
+  margin-left: -50px;
+  box-shadow: 0 0 5px rgba(0,0,0,.35);
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.anticonCaretDown:before {
+  content: "\E611";
+}
+
+.anticon:before {
+  display: block;
+  font-family: anticon!important;
+}
+
+
